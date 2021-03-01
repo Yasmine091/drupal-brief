@@ -8,8 +8,8 @@
 
 ## Install
 
-1. Copy `web/sites/default/settings.example.php` file and rename it to `web/sites/default/settings.php`
-2. Copy `.env.example` file and rename it to `.env`
-3. Add your database credentials and your project URL
-4. Run the follwing command :  
-`drush sql-cli < data/base.sql`
+1. Run command : `composer install`
+2. Copy `web/sites/default/settings.example.php` file and rename it to `web/sites/default/settings.php`
+3. Copy `.env.example` file and rename it to `.env`
+4. Add your database credentials and your project URL
+5. Run the follwing command :  `drush sql-cli < data/base.sql`
