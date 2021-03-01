@@ -9,7 +9,7 @@
 ## Install
 
 1. Run command : `composer install`
-2. Copy `web/sites/default/settings.example.php` file and rename it to `web/sites/default/settings.php`
+2. Replace `web/sites/default/settings.php` file content with `web/sites/default/settings.example.php` file content
 3. Copy `.env.example` file and rename it to `.env`
-4. Add your database credentials and your project URL
+4. Add your database credentials and your project URL to this .env file (you can leave MYSQL_PORT empty)
 5. Run the follwing command :  `drush sql-cli < data/base.sql`
