@@ -1,0 +1,15 @@
+uuid: af1421e7-cd94-43af-ac78-a3460a44d5f2
+langcode: fr
+status: true
+dependencies: {  }
+name: actu
+label: Actu
+effects:
+  bfd3a4cf-be0d-44db-963f-3e9ac4f8eac5:
+    uuid: bfd3a4cf-be0d-44db-963f-3e9ac4f8eac5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 50
+      anchor: center-center

@@ -1,0 +1,42 @@
+uuid: adae2505-21d7-4722-8f9b-01d5e55b350c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.projet.body
+    - field.field.node.projet.field_date_de_realisation
+    - field.field.node.projet.field_visuel_projet
+    - image.style.thumbnail
+    - node.type.projet
+  module:
+    - datetime
+    - image
+    - user
+id: node.projet.teaser
+targetEntityType: node
+bundle: projet
+mode: teaser
+content:
+  field_date_de_realisation:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: short
+    third_party_settings: {  }
+  field_visuel_projet:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true

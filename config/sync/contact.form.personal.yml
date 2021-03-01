@@ -1,0 +1,13 @@
+uuid: e8922261-9a1f-4ff0-b01e-2259dc263b85
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Formulaire de contact personnel'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Votre message a été envoyé.'
+redirect: ''

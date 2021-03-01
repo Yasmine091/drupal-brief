@@ -1,0 +1,22 @@
+uuid: b25d52c4-2a93-4f28-9ec7-a14a58448791
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: projet
+label: Projet
+type: 'canonical_entities:node'
+pattern: '/projet/[node:field_date_de_realisation:date:custom:Y]/[node:title]/'
+selection_criteria:
+  d880842d-bb79-4559-bcb9-10f464d27f40:
+    id: node_type
+    bundles:
+      projet: projet
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d880842d-bb79-4559-bcb9-10f464d27f40
+selection_logic: and
+weight: -5
+relationships: {  }

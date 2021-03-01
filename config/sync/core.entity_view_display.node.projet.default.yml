@@ -1,0 +1,51 @@
+uuid: f3188821-0ae6-439b-b16d-8f31a846a3b8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.projet.body
+    - field.field.node.projet.field_date_de_realisation
+    - field.field.node.projet.field_visuel_projet
+    - node.type.projet
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.projet.default
+targetEntityType: node
+bundle: projet
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_de_realisation:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_visuel_projet:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

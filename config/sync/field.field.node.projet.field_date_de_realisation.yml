@@ -1,0 +1,21 @@
+uuid: c248f244-136b-4757-a83f-160060d2aa23
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_realisation
+    - node.type.projet
+  module:
+    - datetime
+id: node.projet.field_date_de_realisation
+field_name: field_date_de_realisation
+entity_type: node
+bundle: projet
+label: 'Date de réalisation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
