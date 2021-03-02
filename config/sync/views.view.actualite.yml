@@ -7,7 +7,6 @@ dependencies:
     - system.menu.admin
   module:
     - node
-    - user
 id: actualite
 label: Actualité
 module: views
@@ -23,9 +22,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -163,7 +161,6 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_1:
     display_plugin: page
@@ -184,5 +181,4 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }

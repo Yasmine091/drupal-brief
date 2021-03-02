@@ -4,52 +4,53 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.annuaire.body
     - field.field.node.annuaire.field_fonction
     - field.field.node.annuaire.field_nom
     - field.field.node.annuaire.field_photo_de_profil
     - field.field.node.annuaire.field_prenom
+    - image.style.thumbnail
     - node.type.annuaire
   module:
     - image
     - options
-    - text
     - user
 id: node.annuaire.teaser
 targetEntityType: node
 bundle: annuaire
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 1
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   field_fonction:
     type: list_key
-    weight: 5
+    weight: 2
     region: content
     label: above
     settings: {  }
+    third_party_settings: {  }
+  field_nom:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
   field_photo_de_profil:
     type: image
-    weight: 6
+    weight: 3
     region: content
     label: above
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
-  links:
+  field_prenom:
+    type: string
     weight: 0
     region: content
-    settings: {  }
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
-  field_nom: true
-  field_prenom: true
   langcode: true
+  links: true

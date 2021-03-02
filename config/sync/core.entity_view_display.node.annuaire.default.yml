@@ -3,30 +3,21 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.annuaire.body
     - field.field.node.annuaire.field_fonction
     - field.field.node.annuaire.field_nom
     - field.field.node.annuaire.field_photo_de_profil
     - field.field.node.annuaire.field_prenom
-    - image.style.medium
+    - image.style.thumbnail
     - node.type.annuaire
   module:
     - image
     - options
-    - text
     - user
 id: node.annuaire.default
 targetEntityType: node
 bundle: annuaire
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_fonction:
     weight: 5
     label: above
@@ -46,7 +37,7 @@ content:
     weight: 2
     label: above
     settings:
-      image_style: medium
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image

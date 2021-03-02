@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.annuaire.body
     - field.field.node.annuaire.field_fonction
     - field.field.node.annuaire.field_nom
     - field.field.node.annuaire.field_photo_de_profil
@@ -14,20 +13,12 @@ dependencies:
   module:
     - image
     - options
-    - text
     - user
 id: node.annuaire.full
 targetEntityType: node
 bundle: annuaire
 mode: full
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_fonction:
     weight: 5
     label: above
