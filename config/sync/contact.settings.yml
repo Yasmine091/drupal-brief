@@ -1,4 +1,4 @@
-default_form: formulaire
+default_form: contact
 flood:
   limit: 5
   interval: 3600

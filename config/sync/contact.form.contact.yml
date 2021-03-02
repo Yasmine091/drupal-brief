@@ -1,0 +1,12 @@
+uuid: de27f24f-e1f1-4880-9222-04436396fb7e
+langcode: fr
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - mehdilhaddad34@gmail.com
+reply: ''
+weight: 0
+message: 'Votre message est à était envoyé avec succès destinataire.'
+redirect: /
