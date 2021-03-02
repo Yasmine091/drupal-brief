@@ -1,0 +1,12 @@
+uuid: e38e8135-c357-4f46-9798-923ce33826aa
+langcode: fr
+status: true
+dependencies: {  }
+id: formulaire
+label: 'Formulaire Contact'
+recipients:
+  - mehdilhaddad34@gmail.com
+reply: 'Votre message à était transmis au destinateur avec succès.'
+weight: 0
+message: 'Votre message à bien était envoyé au destinataire.'
+redirect: /
