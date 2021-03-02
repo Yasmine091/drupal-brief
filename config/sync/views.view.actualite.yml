@@ -155,6 +155,7 @@ display:
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -171,7 +172,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: actualite-
+      path: actualite
       menu:
         type: normal
         title: Actualité
