@@ -1,0 +1,19 @@
+uuid: 1be93f9d-7412-404f-b1ec-537fdd3e44c1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.storage.contact_message.field_prenom
+id: contact_message.contact.field_prenom
+field_name: field_prenom
+entity_type: contact_message
+bundle: contact
+label: Prénom
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

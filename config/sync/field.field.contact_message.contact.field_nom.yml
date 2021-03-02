@@ -1,0 +1,19 @@
+uuid: 4b20e6bb-6391-46ec-8caa-d42170cdfefe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.storage.contact_message.field_nom
+id: contact_message.contact.field_nom
+field_name: field_nom
+entity_type: contact_message
+bundle: contact
+label: Nom
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
