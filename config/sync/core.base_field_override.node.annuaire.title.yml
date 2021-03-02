@@ -1,0 +1,18 @@
+uuid: fac8246b-d5ad-4caa-b184-76089a92a91c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.annuaire
+id: node.annuaire.title
+field_name: title
+entity_type: node
+bundle: annuaire
+label: Annuaire
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
