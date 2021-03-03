@@ -1,0 +1,23 @@
+uuid: f82d08b4-7f83-4410-b29c-37c51edd9188
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.annuaire
+  module:
+    - text
+id: node.annuaire.body
+field_name: body
+entity_type: node
+bundle: annuaire
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

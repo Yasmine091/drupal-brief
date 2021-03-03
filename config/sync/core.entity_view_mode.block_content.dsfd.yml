@@ -1,0 +1,10 @@
+uuid: 8057c787-5425-473c-a7ed-8362b907287e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.dsfd
+label: dsfd
+targetEntityType: block_content
+cache: true

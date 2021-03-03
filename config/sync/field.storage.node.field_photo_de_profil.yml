@@ -1,0 +1,30 @@
+uuid: 52882082-733e-4a9e-a840-a480b850f594
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_photo_de_profil
+field_name: field_photo_de_profil
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ca38fcb8-fdd5-420e-a312-9c7e7ff00448
+    alt: 'sans image de profil'
+    title: 'image de profil par défaut'
+    width: 512
+    height: 512
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

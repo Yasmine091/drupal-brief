@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 default_form: feedback
+=======
+default_form: contact
+>>>>>>> 132db3f9e57440138f44d624b7ca146c25f26d3b
 flood:
   limit: 5
   interval: 3600

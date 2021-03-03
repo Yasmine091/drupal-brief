@@ -1,0 +1,19 @@
+uuid: dc8e8c4e-aefa-4847-a384-3223cc5ed200
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.storage.contact_message.field_adresse_e_mail
+id: contact_message.contact.field_adresse_e_mail
+field_name: field_adresse_e_mail
+entity_type: contact_message
+bundle: contact
+label: 'Adresse e-mail'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

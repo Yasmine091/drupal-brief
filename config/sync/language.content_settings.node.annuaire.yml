@@ -1,0 +1,11 @@
+uuid: ce90fc8d-5414-493d-a30b-06f74e0ec870
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.annuaire
+id: node.annuaire
+target_entity_type_id: node
+target_bundle: annuaire
+default_langcode: site_default
+language_alterable: false

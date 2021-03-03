@@ -7,9 +7,14 @@ dependencies:
     - node.type.actualite
   module:
     - node
+<<<<<<< HEAD:config/sync/views.view.actualites.yml
     - user
 id: actualites
 label: Actualités
+=======
+id: actualite
+label: Actualité
+>>>>>>> 132db3f9e57440138f44d624b7ca146c25f26d3b:config/sync/views.view.actualite.yml
 module: views
 description: ''
 tag: ''
@@ -23,9 +28,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -175,7 +179,6 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_1:
     display_plugin: page
@@ -192,5 +195,4 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }

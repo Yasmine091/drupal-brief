@@ -1,0 +1,57 @@
+uuid: d8c6992b-6514-4100-b56a-21d05324d1c7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.annuaire.field_fonction
+    - field.field.node.annuaire.field_nom
+    - field.field.node.annuaire.field_photo_de_profil
+    - field.field.node.annuaire.field_prenom
+    - image.style.thumbnail
+    - node.type.annuaire
+  module:
+    - image
+    - options
+    - user
+id: node.annuaire.teaser
+targetEntityType: node
+bundle: annuaire
+mode: teaser
+content:
+  field_fonction:
+    type: list_key
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_nom:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_photo_de_profil:
+    type: image
+    weight: 3
+    region: content
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  field_prenom:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true
