@@ -23,6 +23,7 @@
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/ctools": "^3.4",
+        "drupal/devel": "^4.1",
         "drupal/paragraphs": "^1.2",
         "drupal/pathauto": "^1.8",
         "drupal/token": "^1.9",
