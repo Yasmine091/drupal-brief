@@ -40,12 +40,12 @@ display:
         type: basic
         options:
           submit_button: Appliquer
-          reset_button: false
+          reset_button: true
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Ascendant
+          sort_desc_label: Descendant
       pager:
         type: mini
         options:
@@ -69,6 +69,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       fields:
         title:
@@ -160,6 +161,18 @@ display:
           expose:
             label: ''
           granularity: second
+        field_visuel_title:
+          id: field_visuel_title
+          table: node__field_visuel
+          field: field_visuel_title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: 'Visuel (field_visuel : title)'
+          plugin_id: standard
       title: Actualités
       header: {  }
       footer: {  }
@@ -173,6 +186,8 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags: {  }
   page_1:
@@ -192,11 +207,14 @@ display:
         weight: 0
         context: '0'
         menu_name: main
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags: {  }
