@@ -5,16 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.actualite
+    - system.menu.main
   module:
     - node
-<<<<<<< HEAD:config/sync/views.view.actualites.yml
-    - user
 id: actualites
 label: Actualités
-=======
-id: actualite
-label: Actualité
->>>>>>> 132db3f9e57440138f44d624b7ca146c25f26d3b:config/sync/views.view.actualite.yml
 module: views
 description: ''
 tag: ''
@@ -188,6 +183,15 @@ display:
     display_options:
       display_extenders: {  }
       path: actualites
+      menu:
+        type: normal
+        title: Actualités
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

@@ -5,7 +5,7 @@ dependencies: {  }
 id: contact
 label: Contact
 recipients:
-  - mehdilhaddad34@gmail.com
+  - admin@local
 reply: ''
 weight: 0
 message: 'Votre message est à était envoyé avec succès destinataire.'
