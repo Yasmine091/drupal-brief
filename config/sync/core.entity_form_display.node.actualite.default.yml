@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.actualite.body
+    - field.field.node.actualite.field_type
     - field.field.node.actualite.field_visuel
     - image.style.thumbnail
     - node.type.actualite
@@ -32,6 +33,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_type:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_visuel:
     weight: 8
     settings:

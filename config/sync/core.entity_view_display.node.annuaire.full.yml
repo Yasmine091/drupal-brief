@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.annuaire.body
     - field.field.node.annuaire.field_fonction
     - field.field.node.annuaire.field_nom
     - field.field.node.annuaire.field_photo_de_profil
@@ -27,6 +26,14 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  field_nom:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_photo_de_profil:
     weight: 2
     label: above
@@ -36,6 +43,14 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_prenom:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   links:
     weight: 0
     region: content
@@ -43,6 +58,4 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_nom: true
-  field_prenom: true
   langcode: true
