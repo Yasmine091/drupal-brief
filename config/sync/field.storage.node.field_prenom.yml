@@ -1,4 +1,4 @@
-uuid: 5f5ab50f-1fa6-442d-93f9-d6bdbca24605
+uuid: daf6c39b-fa92-417e-b491-e2afa530c80b
 langcode: fr
 status: true
 dependencies:
@@ -9,7 +9,7 @@ field_name: field_prenom
 entity_type: node
 type: string
 settings:
-  max_length: 255
+  max_length: 18
   is_ascii: false
   case_sensitive: false
 module: core
