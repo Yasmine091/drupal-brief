@@ -1,0 +1,41 @@
+uuid: f631cd60-c500-4da3-95cf-ecc21e2868ea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.page
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.texte
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: page
+label: paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image: image
+      texte: texte
+      video: video
+    target_bundles_drag_drop:
+      image:
+        enabled: true
+        weight: 4
+      texte:
+        enabled: true
+        weight: 5
+      video:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

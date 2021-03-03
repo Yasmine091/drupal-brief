@@ -1,60 +1,50 @@
-uuid: 660e6ee6-562e-4177-a85b-fdec975e8669
+uuid: 7dbd4c42-650c-4455-b431-02d500e8fda1
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_image
-    - field.field.node.page.field_paragraph
-    - image.style.thumbnail
-    - node.type.page
+    - field.field.node.about.body
+    - field.field.node.about.field_video
+    - field.field.node.about.field_videos
+    - node.type.about
   module:
-    - image
-    - paragraphs
     - path
     - text
-_core:
-  default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
-id: node.page.default
+    - youtube
+id: node.about.default
 targetEntityType: node
-bundle: page
+bundle: about
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
-    region: content
+    weight: 121
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    weight: 121
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_paragraph:
-    type: entity_reference_paragraphs
+  field_video:
     weight: 122
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      placeholder_url: ''
     third_party_settings: {  }
+    type: youtube
+    region: content
+  field_videos:
+    weight: 123
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+    type: youtube
     region: content
   langcode:
     type: language_select
@@ -101,11 +91,11 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden: {  }

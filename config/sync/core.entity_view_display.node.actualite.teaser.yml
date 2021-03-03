@@ -1,0 +1,31 @@
+uuid: 7d0eed72-8016-4dcc-a6bd-32155353d700
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_visuel
+    - image.style.thumbnail
+    - node.type.actualite
+  module:
+    - image
+    - user
+id: node.actualite.teaser
+targetEntityType: node
+bundle: actualite
+mode: teaser
+content:
+  field_visuel:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true

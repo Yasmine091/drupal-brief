@@ -1,0 +1,18 @@
+uuid: f2cc2ce9-2f8d-46ff-96fa-9463af83e289
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:e88a7e7d-a68f-4743-a282-6ad563a02ab0'
+name: Actualité
+type: actualite
+description: 'contenu de type actualité'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

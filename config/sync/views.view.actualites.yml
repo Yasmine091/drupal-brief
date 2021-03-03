@@ -1,17 +1,17 @@
-uuid: ff12cd68-168e-4b88-986e-a73280610194
+uuid: 99088140-6aaf-450f-a232-e57c721f06ee
 langcode: fr
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - system.menu.admin
+    - node.type.actualite
   module:
     - node
     - user
-id: actualite
-label: Actualité
+id: actualites
+label: Actualités
 module: views
-description: 'vue actualité'
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -133,6 +133,18 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            actualite: actualite
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       sorts:
         created:
           id: created
@@ -149,7 +161,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Actualité
+      title: Actualités
       header: {  }
       footer: {  }
       empty: {  }
@@ -172,11 +184,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: actualite
-      menu:
-        type: normal
-        title: Actualité
-        menu_name: admin
+      path: actualites
     cache_metadata:
       max-age: -1
       contexts:
