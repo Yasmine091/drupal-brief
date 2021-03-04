@@ -1,0 +1,47 @@
+uuid: 0e2ea061-a5d8-41bc-b525-0e89c8a7910d
+langcode: fr
+status: false
+dependencies:
+  config:
+    - contact.form.contact
+    - core.entity_view_mode.contact_message.token
+    - field.field.contact_message.contact.field_adresse_e_mail
+    - field.field.contact_message.contact.field_nom
+    - field.field.contact_message.contact.field_prenom
+id: contact_message.contact.token
+targetEntityType: contact_message
+bundle: contact
+mode: token
+content:
+  field_adresse_e_mail:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_nom:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_prenom:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  message:
+    type: basic_string
+    weight: 3
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

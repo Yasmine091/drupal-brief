@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
+    - system.menu.main
   module:
     - node
 _core:
@@ -236,7 +237,7 @@ display:
           row_class: ''
           default_row_class: true
           uses_fields: false
-      title: Welcome
+      title: Accueil
       header: {  }
       footer: {  }
       relationships: {  }
@@ -295,6 +296,15 @@ display:
     display_options:
       path: accueil
       display_extenders: {  }
+      menu:
+        type: normal
+        title: Accueil
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
     display_plugin: page
     display_title: Page
     id: page_1
