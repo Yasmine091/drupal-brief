@@ -28,7 +28,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/token": "^1.9",
         "drupal/youtube": "^1.2",
-        "drush/drush": "^10.4",
+        "drush/drush": "^10.3",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
     },
