@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.annuaire.body
     - field.field.node.annuaire.field_fonction
     - field.field.node.annuaire.field_nom
     - field.field.node.annuaire.field_photo_de_profil
@@ -24,13 +25,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_fonction:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_nom:
-    weight: 8
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -38,7 +39,7 @@ content:
     type: string_textfield
     region: content
   field_photo_de_profil:
-    weight: 11
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -46,7 +47,7 @@ content:
     type: image_image
     region: content
   field_prenom:
-    weight: 9
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -105,4 +106,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
