@@ -1,0 +1,8 @@
+# Schema for the configuration files of the Drudrupalpal theme.
+drudrupalpal.settings:
+  type: theme_settings
+  label: 'Drudrupalpal settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size

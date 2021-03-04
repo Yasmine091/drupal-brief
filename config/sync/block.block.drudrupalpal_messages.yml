@@ -1,0 +1,22 @@
+uuid: 94b102af-7849-40de-b3d4-44658e4f55bd
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: KfyaTPRJEcAyy2e5AxEfWQnuHcn4WrfvcWek7lSmHZQ
+id: drudrupalpal_messages
+theme: drudrupalpal
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

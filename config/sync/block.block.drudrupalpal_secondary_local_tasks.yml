@@ -1,0 +1,22 @@
+uuid: 3d142a4b-0d30-4189-bf5e-a84100845070
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: V7GM1m6Qh500cQE7LWZV8lRuwLqXdjR0S2kSk8pEv6g
+id: drudrupalpal_secondary_local_tasks
+theme: drudrupalpal
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

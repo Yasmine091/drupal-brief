@@ -1,0 +1,25 @@
+uuid: b12b77ba-1a9e-4388-b6c0-ad687fae7ecc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: sYjScJ6uW1UvGZ-G3AtTcZmPoOiQJtndHqamm8FAFgU
+id: drudrupalpal_site_branding
+theme: drudrupalpal
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

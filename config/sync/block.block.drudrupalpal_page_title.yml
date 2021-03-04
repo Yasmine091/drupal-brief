@@ -1,0 +1,20 @@
+uuid: 83ae688e-ab7a-4146-8ed9-59d744eed93e
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
+id: drudrupalpal_page_title
+theme: drudrupalpal
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

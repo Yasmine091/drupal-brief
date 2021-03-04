@@ -1,0 +1,22 @@
+uuid: b8bdb6ea-8ee2-4677-b085-963137b8c86e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: BL6Gcw5Us0zai1ADadlNYLxlEblMedc_3C3lF0PjtCE
+id: drudrupalpal_content
+theme: drudrupalpal
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

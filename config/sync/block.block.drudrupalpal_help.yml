@@ -1,0 +1,22 @@
+uuid: 08f19db5-61aa-40bf-a83b-ab04747408a1
+langcode: fr
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: kZCp4h7S-QCo6ENXEyv5I6jbxtIFGrDT8hDDFUfuNjY
+id: drudrupalpal_help
+theme: drudrupalpal
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

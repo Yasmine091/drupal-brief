@@ -1,0 +1,22 @@
+uuid: 582f9724-b3e9-4a1a-8aae-d7041f759d00
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_for_drupal
+_core:
+  default_config_hash: 6NusGVE1uySAtJIWlR8SdafTGWBox7715QJ0tL-LpvI
+id: bootstrap_for_drupal_content
+theme: bootstrap_for_drupal
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

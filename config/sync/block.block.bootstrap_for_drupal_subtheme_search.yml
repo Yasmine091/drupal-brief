@@ -1,0 +1,23 @@
+uuid: 6913b02d-f50f-4a58-a32d-43cd7cbb1000
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bootstrap_for_drupal_subtheme
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: bootstrap_for_drupal_subtheme_search
+theme: bootstrap_for_drupal_subtheme
+region: header_special
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

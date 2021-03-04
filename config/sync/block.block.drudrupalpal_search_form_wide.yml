@@ -1,0 +1,23 @@
+uuid: 936e4e12-af0d-4621-a9c3-abab5735a0b1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: kF9mVmsseaqxC_a3r0oTNT2MOdiEdr9-6lMUfIa18eI
+id: drudrupalpal_search_form_wide
+theme: drudrupalpal
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

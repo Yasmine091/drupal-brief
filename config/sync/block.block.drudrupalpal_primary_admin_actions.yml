@@ -1,0 +1,20 @@
+uuid: 25c7299c-8170-4cf0-a11d-e1b7317febe3
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - drudrupalpal
+_core:
+  default_config_hash: sBMSSrWtP58IZaz1i3-MJ9yq_y32w1nc7N5DZJmt-4M
+id: drudrupalpal_primary_admin_actions
+theme: drudrupalpal
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
